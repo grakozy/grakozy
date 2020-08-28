@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.panel:nth-child(2) {
+  background-color: #fffc00;
+}
+
+.panel_hero {
+  background-image: url(resources/ski.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.panel_heading {
+  margin: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}
