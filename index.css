@@ -23,10 +23,6 @@
   align-items: center;
 }
 
-.panel:nth-child(2) {
-  background-color: #fffc00;
-}
-
 .panel_hero {
   background-image: url(resources/ski.jpg);
   background-repeat: no-repeat;
