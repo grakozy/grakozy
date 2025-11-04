@@ -1,83 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <link
-      rel="shortcut icon"
-      href="./resources/favicon.ico"
-      type="image/x-icon"
-    />
-    <title>Greg Rakozy | Sales Engineer</title>
-    <meta property="og:title" content="Greg Rakozy | Sales Engineer" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://gregrakozy.com" />
-    <meta property="og:image" content="resources/skrt.jpg" />
-    <meta
-      property="og:description"
-      content="I'm Greg Rakozy, a Sales Engineer living in Bozeman, Montana who is looking for his next opportunity."
-    />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-45619309-5"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Greg Rakozy - Software Developer & Creator based in Bozeman, MT. Personal profile and digital business card.">
+    <meta name="keywords" content="Greg Rakozy, Software Developer, Bozeman, Montana, Developer, Creator">
+    <meta name="author" content="Greg Rakozy">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gregrakozy.com/">
+    <meta property="og:title" content="Greg Rakozy - Software Developer & Creator">
+    <meta property="og:description" content="Personal profile and digital business card for Greg Rakozy, Software Developer & Creator based in Bozeman, MT.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://gregrakozy.com/">
+    <meta property="twitter:title" content="Greg Rakozy - Software Developer & Creator">
+    <meta property="twitter:description" content="Personal profile and digital business card for Greg Rakozy, Software Developer & Creator based in Bozeman, MT.">
+    
+    <title>Greg Rakozy - Software Developer & Creator</title>
+    <link rel="canonical" href="https://gregrakozy.com/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      gtag("config", "UA-45619309-5");
-    </script>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-KVXGWX3");
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="container">
-        <div class="panel panel_hero"></div>
-        <div class="panel">
-          <div class="panel_heading">
-            <h1>
-              Howdy!
-            </br>
-          </br>
-              I'm Greg Rakozy, a Sr Solutions Consultant living in Bozeman, Montana who is building the next generation of BPO with XtendOps.
-        </br>
-      </br>
-            </h1>
-            <p>
-              Connect with me:
-              <a href="https://www.linkedin.com/grakozy/" target="_blank">LinkedIn</a>
-            </p>
-            <p>
-              Follow me:
-              <a href="https://www.instagram.com/tellyourdogisayshi/" target="_blank"
-                >Instagram</a
-              >
-            </p>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            font-weight: 300;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .location {
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .link {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: #000;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .link:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .link {
+                padding: 0.625rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Greg Rakozy</h1>
+        <p class="subtitle">Software Developer & Creator</p>
+        <p class="location">Bozeman, MT</p>
+        <nav class="links" aria-label="Main navigation">
+            <a href="https://radkozy.com" class="link">My Work → Radkozy</a>
+            <a href="https://github.com/grakozy" class="link" target="_blank" rel="noopener noreferrer" aria-label="Visit Greg Rakozy's GitHub profile">GitHub</a>
+        </nav>
+    </main>
+</body>
 </html>
